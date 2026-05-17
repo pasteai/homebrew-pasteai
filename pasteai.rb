@@ -11,7 +11,7 @@ class Pasteai < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pasteai/pasteai/releases/download/v0.0.1/pasteai_0.0.1_darwin_amd64.tar.gz"
-      sha256 "35bf56f2db3b95aa980885d078551bd77fec01689b15a52e9c3f8a2ec6a7d6ab"
+      sha256 "acec02a01f597106e8a79a0d343164048e5041f5d7688f639787a163c1c6c17e"
 
       define_method(:install) do
         bin.install "pasteai"
@@ -19,7 +19,7 @@ class Pasteai < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pasteai/pasteai/releases/download/v0.0.1/pasteai_0.0.1_darwin_arm64.tar.gz"
-      sha256 "0ff75353fa549ae76c8dd6c58da5041b9045ce30b9b541290d91b818bade523c"
+      sha256 "2f3446e792f5f36baebccd97790518d848647ec88e890ee0178bb1680da79b42"
 
       define_method(:install) do
         bin.install "pasteai"
@@ -30,14 +30,14 @@ class Pasteai < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pasteai/pasteai/releases/download/v0.0.1/pasteai_0.0.1_linux_amd64.tar.gz"
-      sha256 "4d047b4cbeba909e7f47634f283c07947c3169e1428f8b69075ad1758a68411c"
+      sha256 "d40637cd6e01081ab476197a39c20f9cc04d7a3558f0dcecdea750cab9f9a87b"
       define_method(:install) do
         bin.install "pasteai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pasteai/pasteai/releases/download/v0.0.1/pasteai_0.0.1_linux_arm64.tar.gz"
-      sha256 "2b77735791ce271ae9b32833e608f343b94bdaffa9a907dbf2cfccec52e29b02"
+      sha256 "877b0f8b70a4dd9017dc8bb660e65f2483c45242f05d7b3175ec8e2acf27b9f2"
       define_method(:install) do
         bin.install "pasteai"
       end
