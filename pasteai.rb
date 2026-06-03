@@ -5,21 +5,21 @@
 class Pasteai < Formula
   desc "AI publishes markdown documents via MCP. You read them in a clean, themed web UI."
   homepage "https://github.com/pasteai/pasteai"
-  version "0.0.16"
+  version "0.0.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pasteai/pasteai/releases/download/v0.0.16/pasteai_0.0.16_darwin_amd64.tar.gz"
-      sha256 "f066cce55bb971ca3c3299516ce20bbd7443163e7dbfd7e54a8a260a70e3a4ac"
+      url "https://github.com/pasteai/pasteai/releases/download/v0.0.17/pasteai_0.0.17_darwin_amd64.tar.gz"
+      sha256 "0339c484a1e9854ea66e9bfb02191b38ce3ae406ef767f3a081f27b2cc3d7fb2"
 
       define_method(:install) do
         bin.install "pasteai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pasteai/pasteai/releases/download/v0.0.16/pasteai_0.0.16_darwin_arm64.tar.gz"
-      sha256 "7600624f53424ce0fc005181af2c97df5eadc9acdcc02e81dd791171e1de0913"
+      url "https://github.com/pasteai/pasteai/releases/download/v0.0.17/pasteai_0.0.17_darwin_arm64.tar.gz"
+      sha256 "e02511ce118238b90adb3c824cc70c96754e9da1d14c2adc6d09faf57d0bf100"
 
       define_method(:install) do
         bin.install "pasteai"
@@ -29,15 +29,15 @@ class Pasteai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pasteai/pasteai/releases/download/v0.0.16/pasteai_0.0.16_linux_amd64.tar.gz"
-      sha256 "4d63b77be115ec8c16ebf29879a388af5d15d846cc9e03531a30c81ee60c7d3d"
+      url "https://github.com/pasteai/pasteai/releases/download/v0.0.17/pasteai_0.0.17_linux_amd64.tar.gz"
+      sha256 "05c880a4d2ab2f747a2e1aedc7a4e311fa1f20ebc84b6498c89b2f5075660a28"
       define_method(:install) do
         bin.install "pasteai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pasteai/pasteai/releases/download/v0.0.16/pasteai_0.0.16_linux_arm64.tar.gz"
-      sha256 "ef1fe7fe9feeeac772f05c76038bd04abf64b6690bc02847cebff8836b7d3f33"
+      url "https://github.com/pasteai/pasteai/releases/download/v0.0.17/pasteai_0.0.17_linux_arm64.tar.gz"
+      sha256 "b4632f466052cbab3b44be3da2b5b23fd426cacf6862152ab0b8ed9958246e01"
       define_method(:install) do
         bin.install "pasteai"
       end
